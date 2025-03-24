@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Total</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><i class="fas fa-futbol"></i> Fútbol Total</a>
+            </div>
+            <ul class="nav no-search">
+                <li><a href="#hero"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
+                <li><a href="#photos"><i class="fas fa-images"></i> Galería</a></li>
+                <li><a href="#testimonials"><i class="fas fa-comments"></i> Comentarios</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contactos</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Fútbol Total: Tu Pasión, Nuestro Compromiso</h1>
+            <p>Vive el fútbol en cada jugada. ¡Equipamos tu pasión!</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios/Productos -->
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service">
+            <h3>Equipamiento Deportivo</h3>
+            <ul>
+                <li>Venta de balones</li>
+                <li>Ropa de equipo (camisetas, pantalones, chaquetas)</li>
+                <li>Calzado deportivo (botas de fútbol) de marcas reconocidas</li>
+            </ul>
+        </div>
+        <div class="service">
+            <h3>Accesorios y Regalos</h3>
+            <ul>
+                <li>Bufandas</li>
+                <li>Gorras</li>
+                <li>Mochilas</li>
+                <li>Artículos de decoración para el hogar (cuadros, posters)</li>
+            </ul>
+        </div>
+        <div class="service">
+            <h3>Experiencias y Eventos</h3>
+            <ul>
+                <li>Entradas para partidos</li>
+                <li>Encuentros con jugadores</li>
+                <li>Experiencias de entrenamiento</li>
+                <li>Suscripciones para contenido exclusivo sobre fútbol</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Fotos -->
+    <section id="photos">
+        <h2>Galería de Fotos de nuestros Servicios</h2>
+        <div class="photo-grid">
+            <figure>
+                <img src="accesorio.jpg" alt="Foto 1">
+                <figcaption>Accesorios</figcaption>
+            </figure>
+            <figure>
+                <img src="equipamientodeportivo.jpg" alt="Foto 2">
+                <figcaption>Equipamiento Deportivo</figcaption>
+            </figure>
+            <figure>
+                <img src="eventos.jpg" alt="Foto 3">
+                <figcaption>Eventos</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials">
+        <h2>Comentarios</h2>
+        <div class="testimonial">
+            <img src="persona 1.jpeg" alt="Cliente 1">
+            <h3>Rafael</h3>
+            <p>★★★★★</p>
+            <p>¡Increíble selección de productos! Compré una camiseta de mi equipo y llegó en tiempo récord. ¡Repetiré sin duda!.</p>
+        </div>
+        <div class="testimonial">
+            <img src="persona 2.jpeg" alt="Cliente 2">
+            <h3>Maria</h3>
+            <p>★★★★★</p>
+            <p>El servicio al cliente es excepcional. Tuvieron la amabilidad de ayudarme a elegir la talla correcta para mis botas. ¡Muy satisfecha!.</p>
+        </div>
+        <div class="testimonial">
+            <img src="persona 3.jpeg" alt="Cliente 3">
+            <h3>Lorenzo</h3>
+            <p>★★★★★</p>
+            <p>Fútbol Total es mi tienda favorita. La calidad de los productos es excelente y siempre encuentro lo que busco. ¡100% recomendado!.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contacto: fa-futbol@gmail.com</p>
+        <ul>
+            <li><a href="https://www.facebook.com/RaiderFire"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://x.com/theRaid34688330"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.instagram.com/yovannijuniorpeguero"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+        <form>
+            <input type="email" placeholder="Suscríbete a nuestro boletín">
+            <button type="submit">Suscribirse</button>
+        </form>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

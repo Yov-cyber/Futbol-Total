@@ -1,0 +1,342 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a; /* Fondo negro */
+    color: #e0e0e0; /* Texto gris claro */
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f; /* Negro */
+    padding: 20px;
+    border-bottom: 3px solid #00ff00; /* Verde neón */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #00ff00; /* Verde neón */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+header .logo i {
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0; /* Texto gris claro */
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #005500; /* Verde oscuro */
+}
+
+header nav ul li .contact-button {
+    background-color: #6200ea; /* Morado */
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff; /* Blanco */
+}
+
+header nav ul li .contact-button:hover {
+    background-color: #3700b3; /* Morado oscuro */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    color: #00ff00; /* Verde neón */
+    font-size: 24px;
+}
+
+/* Hero Section */
+#hero {
+    background: url('fondo\ 1.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    padding: 100px 20px;
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar el contraste */
+}
+
+#hero p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar el contraste */
+}
+
+/* Sección de Servicios/Productos */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00; /* Verde neón */
+}
+
+.service {
+    background-color: #1f1f1f; /* Gris oscuro */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ff00; /* Borde verde neón */
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #00ff00; /* Verde neón */
+}
+
+.service ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service ul li {
+    font-size: 1em;
+    color: #e0e0e0; /* Texto gris claro */
+    margin: 10px 0;
+}
+
+/* Sección de Fotos */
+#photos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#photos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00; /* Verde neón */
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-grid figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.photo-grid img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #00ff00; /* Borde verde neón */
+}
+
+.photo-grid figcaption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #00ff00; /* Verde neón */
+}
+
+/* Sección de Testimonios */
+#testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00; /* Verde neón */
+}
+
+.testimonial {
+    background-color: #1f1f1f; /* Gris oscuro */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ff00; /* Borde verde neón */
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.testimonial h3 {
+    margin: 0;
+    color: #00ff00; /* Verde neón */
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #e0e0e0; /* Texto gris claro */
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f; /* Gris oscuro */
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #00ff00; /* Verde neón */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #00ff00; /* Texto verde neón */
+}
+
+footer form {
+    margin-top: 20px;
+}
+
+footer form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333; /* Gris oscuro */
+    color: #e0e0e0; /* Texto gris claro */
+}
+
+footer form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff00; /* Verde neón */
+    color: #0a0a0a; /* Texto negro */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer form button:hover {
+    background-color: #005500; /* Verde oscuro */
+}
+
+/* Estilos para los iconos en el menú de navegación */
+header nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0; /* Texto gris claro */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service, .testimonial {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .photo-grid img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        padding: 50px 20px;
+    }
+
+    .service, .testimonial {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .photo-grid img {
+        width: 80px;
+        height: 80px;
+    }
+}
